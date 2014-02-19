@@ -18,6 +18,8 @@ export PS1="\[\033[1;31m\]\!\[\033[0m\] \[\033[0;33m\]\u@\h\[\033[0m\]:\[\033[1;
 alias ip="ipython"
 alias ipn="ipython notebook --pylab inline"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias of="open ./"
+alias ipexport="ipython nbconvert"
 
 export PYTHONPATH=$PYTHONPATH:/users/shogg/pymodules:/usr/local/lib/python2.7/site-packages
 
