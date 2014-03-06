@@ -20,6 +20,27 @@ alias ipn="ipython notebook --pylab inline"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias of="open ./"
 alias ipexport="ipython nbconvert"
+alias myip="curl ipecho.net/plain; echo"
+alias du="du -h"
+alias topwatch="top -a -o cpu -n 5"
+
+# Some git aliases
+
+alias ga='git add -A'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+alias gta='git tag -a -m'
+alias gf='git reflog'
 
 export PYTHONPATH=$PYTHONPATH:/users/shogg/pymodules:/usr/local/lib/python2.7/site-packages
 
