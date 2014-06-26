@@ -3,3 +3,5 @@
 [user]
 	email = simon@hogg.us
 	name = Simon Hogg
+[core]
+	editor = subl -n -w

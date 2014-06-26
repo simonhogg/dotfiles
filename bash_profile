@@ -18,12 +18,16 @@ export PS1="\[\033[1;31m\]\!\[\033[0m\] \[\033[0;33m\]\u@\h\[\033[0m\]:\[\033[1;
 alias ip="ipython"
 alias ipn="ipython notebook --pylab inline"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+#alias pf="/Applications/Path\ Finder.app/Contents/MacOS/Path\ Finder"
 alias of="open ./"
 alias ipexport="ipython nbconvert"
 alias myip="curl ipecho.net/plain; echo"
 alias du="du -h"
 alias topwatch="top -a -o cpu -n 5"
+alias o="open"
+alias brewssh="ssh -l pi -p 122 tovar.hogg.us"
 
+pf () { open -a "Path Finder.app" $1; }
 # Some git aliases
 
 alias ga='git add -A'
