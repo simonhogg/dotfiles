@@ -23,7 +23,7 @@ ZSH_THEME="pure"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
  COMPLETION_WAITING_DOTS="true"
@@ -92,3 +92,6 @@ alias o="open"
 alias brewssh="ssh -l pi -p 122 tovar.hogg.us"
 
 pf () { open -a "Path Finder.app" $1; }
+
+# add, commit and push with $1 as quoted commit message.
+function gpa() { git add .; git commit -m "$1"; git push }

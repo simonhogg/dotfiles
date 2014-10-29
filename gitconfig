@@ -5,3 +5,5 @@
 	name = Simon Hogg
 [core]
 	editor = subl -n -w
+[credential]
+	helper = osxkeychain
