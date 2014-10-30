@@ -90,6 +90,7 @@ alias du="du -h"
 alias topwatch="top -a -o cpu -n 5"
 alias o="open"
 alias brewssh="ssh -l pi -p 122 tovar.hogg.us"
+alias mkdir="mkdir -p"
 
 pf () { open -a "Path Finder.app" $1; }
 
