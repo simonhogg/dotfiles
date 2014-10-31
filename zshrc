@@ -92,6 +92,8 @@ alias o="open"
 alias brewssh="ssh -l pi -p 122 tovar.hogg.us"
 alias mkdir="mkdir -p"
 
+alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
+
 pf () { open -a "Path Finder.app" $1; }
 
 # add, commit and push with $1 as quoted commit message.
