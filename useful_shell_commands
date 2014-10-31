@@ -5,3 +5,18 @@ export PS1="\[\033[1;31m\]\!\[\033[0m\] \[\033[0;33m\]\u@\h\[\033[0m\]:\[\033[1;
 
 # Change Hostname (permanently)
 sudo scutil -- HostName new_hostname
+
+$ sudo scutil --set ComputerName "newname" 
+$ sudo scutil --set LocalHostName "newname" 
+$ sudo scutil --set HostName "newname"
+
+# Killing processes
+
+To see if Safari is running:
+$ pgrep Safari
+
+It might display:
+mel 75341 0.0 0.7 ... /Applications/Safari.app/Contents/MacOS/Safari
+
+To kill Safari (now!):
+$ pkill -9 Safari
