@@ -96,7 +96,19 @@ alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 
 
 pf () { open -a "Path Finder.app" $1; }
 
+function mvp ()
+{
+  for last; do true; done
+  if [[ ! -e $last ]]; then
+    mkdir -p $last
+  fi
+  mv $@
+}
 
+function archive ()
+{
+	find $1 -type f -depth 1 -mtime +52w -exec mkdir -p archived \; -exec mv -v {} ./archived/ \;
+}
 
 # add, commit and push with $1 as quoted commit message.
 function gpa() { git add .; git commit -m "$1"; git push }
