@@ -1,0 +1,11 @@
+sudo apt-get update
+
+sudo apt-get install zsh
+curl -L http://install.ohmyz.sh | sh
+git clone http://github.com/simonhogg/dotfiles.git
+dotfiles/dfinstall.sh
+
+sudo apt-get install avahi-daemon
+sudo apt-get install netatalk
+
+sudo chsh zsh

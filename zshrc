@@ -79,7 +79,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/:/usr/local/bin:/usr/bin:
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ip="ipython"
 alias ipn="ipython notebook --pylab inline"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 #alias pf="/Applications/Path\ Finder.app/Contents/MacOS/Path\ Finder"
@@ -93,6 +92,8 @@ alias brewssh="ssh -l pi -p 122 tovar.hogg.us"
 alias mkdir="mkdir -p"
 alias ql="qlmanage -p"
 alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
+
+alias uxfolder="winpath '\\nirvana\labview\UX\'"
 
 pf () { open -a "Path Finder.app" $1; }
 
